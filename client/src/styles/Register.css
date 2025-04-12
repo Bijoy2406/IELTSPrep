@@ -1,0 +1,144 @@
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+}
+
+.register-form-wrapper {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 500px;
+  padding: 30px;
+  width: 90%;
+}
+
+.logo {
+  color: #3498db;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #2c3e50;
+}
+
+.title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.styled-field {
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 12px 15px 12px 40px;
+  transition: border 0.3s;
+  width: 100%;
+}
+
+.styled-field:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.icon-wrapper {
+  color: #7f8c8d;
+  left: 15px;
+  position: absolute;
+  top: 14px;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 0;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.submit-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.link-text {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link-text a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.link-text a:hover {
+  text-decoration: underline;
+}
+
+.divider-line {
+  align-items: center;
+  display: flex;
+  margin: 20px 0;
+}
+
+.divider-line::before,
+.divider-line::after {
+  border-top: 1px solid #e1e8ed;
+  content: '';
+  flex-grow: 1;
+}
+
+.divider-line span {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0 10px;
+}
+
+.info-text {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.field-row {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 500px) {
+  .field-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

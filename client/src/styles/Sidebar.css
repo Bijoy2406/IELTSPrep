@@ -1,0 +1,95 @@
+.sidebar-container {
+  width: 250px;
+  background-color: #1a2636;
+  color: #fff;
+  height: 100%;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    height: 100vh;
+  }
+
+  .sidebar-container.closed {
+    left: -250px;
+  }
+}
+
+.user-info {
+  padding: 20px;
+  border-bottom: 1px solid #34495e;
+  text-align: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #3498db;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-role {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #2c3e50;
+}
+
+.nav-link.active {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link svg {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.section-title {
+  padding: 10px 20px;
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #7f8c8d;
+  text-transform: uppercase;
+}
