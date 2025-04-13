@@ -1,0 +1,21 @@
+{
+  "name": "ielts-prep-app",
+  "version": "1.0.0",
+  "description": "Full-stack IELTS Preparation Application",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && bun run dev",
+    "server": "cd server && bun run dev",
+    "dev": "cd server && bun run dev"
+  },
+  "keywords": [
+    "ielts",
+    "preparation",
+    "fullstack",
+    "react",
+    "node",
+    "mysql"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
