@@ -2,16 +2,30 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background:  #aee3f0; /* fallback base */
+}
+
+.spotlight-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 200vh;
+  pointer-events: none;
+  z-index: 0; /* Put it below main content */
+  background: radial-gradient(circle at var(--mouse-x, 80%) var(--mouse-y, 80%), #83e9f7, transparent 80%);
+  transition: background 0.1s ease;
 }
 
 .main-content {
-  display: flex;
-  flex: 1;
+  position: relative;
+  z-index: 2; /* Ensure content is above background effect */
 }
 
 .content-area {
   flex: 1;
   padding: 20px;
-  background-color: #f5f5f5;
-  overflow-y: auto;
+  z-index: 2; /* Also keep this above background */
 }

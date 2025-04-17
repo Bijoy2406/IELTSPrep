@@ -1,0 +1,67 @@
+ielts-mock-test/
+├── node_modules/ (ignored in Git)
+├── public/ (static assets)
+│   ├── index.html
+│   ├── react.svg
+│   └── assets/ (images, fonts, etc.)
+│
+├── src/
+│   ├── assets/ (global static files)
+│   │   └── react.svg (move here from public/)
+│   │
+│   ├── components/ (reusable UI components)
+│   │   ├── common/
+│   │   │   ├── AdminRoute.jsx
+│   │   │   └── ProtectedRoute.jsx
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Layout.jsx (main layout wrapper)
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Sidebar.jsx
+│   │   │
+│   │   └── (other reusable components like buttons, cards, etc.)
+│   │
+│   ├── context/ (React contexts)
+│   │   └── AuthContext.jsx
+│   │
+│   ├── pages/ (route-based components)
+│   │   ├── auth/
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   │
+│   │   ├── public/
+│   │   │   ├── About.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   └── Home.jsx
+│   │   │
+│   │   ├── user/
+│   │   │   └── Dashboard.jsx
+│   │   │
+│   │   └── (future pages: tests, resources, etc.)
+│   │
+│   ├── services/ (API/backend calls)
+│   │   └── api.js
+│   │
+│   ├── styles/ (CSS/SCSS files)
+│   │   ├── components/
+│   │   │   ├── Footer.css
+│   │   │   ├── Navbar.css
+│   │   │   └── Sidebar.css
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── About.css
+│   │   │   ├── Contact.css
+│   │   │   ├── Dashboard.css
+│   │   │   ├── Home.css
+│   │   │   ├── Login.css
+│   │   │   └── Register.css
+│   │   │
+│   │   ├── App.css (global styles)
+│   │   └── index.css (base/reset styles)
+│   │
+│   ├── App.jsx (main app wrapper)
+│   └── main.jsx (React DOM entry point)
+│
+├── .gitignore
+└── package.json

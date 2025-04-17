@@ -17,5 +17,8 @@
     "mysql"
   ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "framer-motion": "^12.7.4"
+  }
 }
