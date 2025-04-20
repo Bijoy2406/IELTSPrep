@@ -49,6 +49,21 @@
   width: 100%;
 }
 
+/* Password field specific styles */
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field .styled-field {
+  padding-right: 45px; /* Make room for the eye icon */
+}
+
+/* Fix icon positioning in password fields */
+.form-group .icon-wrapper {
+  z-index: 4;
+}
+
 .styled-field:focus {
   border-color: #3498db;
   outline: none;
@@ -122,4 +137,62 @@
   color: #7f8c8d;
   font-size: 0.9rem;
   margin: 0 10px;
+}
+
+/* Password toggle button styles */
+.password-toggle {
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: 0;
+  background: transparent;
+  color: #7f8c8d;
+  position: absolute;
+  right: 5px;
+  z-index: 5;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  outline: 0;
+  transition: color 0.2s;
+}
+
+.password-toggle:hover,
+.password-toggle:focus {
+  color: #3498db;
+}
+
+.password-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Eye animation styles */
+.eye circle:nth-of-type(2) {
+  fill: white;
+}
+
+.form-group:focus-within .password-toggle {
+  color: #3498db;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .eye circle:nth-of-type(2) {
+    fill: black;
+  }
 }

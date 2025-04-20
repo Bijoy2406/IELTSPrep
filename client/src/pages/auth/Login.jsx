@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa';
 import { AuthContext } from '../../context/AuthContext';
+import PasswordToggle from '../../components/PasswordToggle';
 import '../../styles/Login.css';
 
 // Validation schema
@@ -87,12 +88,11 @@ const Login = () => {
                 <div className="icon-wrapper">
                   <FaLock />
                 </div>
-                <Field
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  className="styled-field"
-                />
+                <Field name="password">
+                  {({ field, form }) => (
+                    <PasswordToggle field={field} form={form} />
+                  )}
+                </Field>
                 <ErrorMessage name="password" component="div" className="error-text" />
               </div>
 

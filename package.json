@@ -17,5 +17,8 @@
     "mysql"
   ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gsap": "^3.12.7"
+  }
 }
